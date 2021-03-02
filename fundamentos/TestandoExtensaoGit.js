@@ -1,2 +1,2 @@
 console.log('Será que funciona?')
-Aee desgraça, funciona!
+console.log('Aee desgraça, funciona!')
