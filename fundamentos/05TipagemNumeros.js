@@ -45,5 +45,50 @@ alguns dígitos depois da vírgula. Mas na real, o número de caracteres por tr�
 
 console.log(media.toString())
 /*
-
+Essa função, como o próprio nome dele sugere, o valor que será apresentado, ele virá em formato de 
+string. Ali, apesar de mostrar números, são caracteres como se fosse texto.
 */
+
+console.log(media.toString(2)) // Binário
+
+/*
+Ao colocar o número 2 dentro desses parênteses, o computador vai fazer a leitura naquele número gigante
+porém em binário. Ou seja, ele vai jogar na tela uma porrada de zeros e uns. Será que se eu pôr um 6
+ele me retorna em octal?
+*/
+
+console.log(media.toString(8)) // Octal
+
+/* Sim! de fato, ele retorna valores em octal, e acredito que isso vale para decimal e 
+hexadecimal. No caso, essa função "toString" serve até como conversor de sistemas númericos.
+Binário, Octal, Decimal e Hexadecimal.
+ */
+
+console.log(media.toString(10)) // Decimal
+console.log(media.toString(16)) // Hexadecimal
+
+/* O padrão é mostrar em decimal, por isso tentar converter para decimal, ele mostra o mesmo
+valor original
+ */
+
+ // Testando agora como saber os tipos dos números:
+
+ console.log(typeof media)
+ console.log(typeof Number) 
+ 
+ // Prestar atenção para não pôr "number" com "N" maiúsculo, pois isso é uma função.
+ // Testa aí que você vai confirmar isso: Ctrl + Shift + N
+
+ console.log(typeof peso2)
+ /* Testa isso daí e perceba que por mais que a variável "peso2" originalmente seja uma string
+ ele se comporta como número. Devido ter chamado a função "Number" (com N maiúsculo), ela leu o que tinha
+ na string e viu que era um número, sendo assim, pro javascript, "peso2" é "number" (tipo de dado)
+ e não uma string.
+ */
+console.log(' ')
+
+ const saudacao = ('Olá, tudo bem?')
+ console.log(saudacao)
+ console.log(typeof saudacao)
+
+ // Viu o resultado? a variável "saudacao" é do tipo string
